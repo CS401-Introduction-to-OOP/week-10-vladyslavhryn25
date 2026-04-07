@@ -1,7 +1,7 @@
 namespace Week10Character;
 
 public enum CharacterStatus {Active, Wounded, Dead}
-public enum EventType {Rest, Combat, Healing, Tressure}
+public enum EventType {Rest, Combat, Healing, Treasure}
 public class Character 
 { public string Name { get; set;} 
     public string Role { get; set;}

@@ -8,13 +8,7 @@ public class Character
     public int Level { get; set; } 
     public int HP { get; set; } 
     public int Gold { get; set; }
-    public Character(string name, string role, int level, int hp, int gold, CharacterStatus status = CharacterStatus.Active) 
-    {
-        Name = name;
-        Role = role; 
-        Level = level; 
-        HP = hp;
-        Gold = gold;
-        
-    } 
+    public CharacterStatus Status { get; set; }
+    public override string ToString() => 
+        $"{Name} ({Role}, Рівень: {Level}) | HP: {HP} | Золото: {Gold} | Стан: {Status}";
 }
